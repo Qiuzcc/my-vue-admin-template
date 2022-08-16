@@ -8,6 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import 'normalize.css/normalize.css'
 import '@/styles/index.scss'
 import '@/icons'
+import './permission'
+import '../mock-simple'
 
 Vue.config.productionTip = false;
 

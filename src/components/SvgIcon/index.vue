@@ -1,6 +1,6 @@
 <template>
-    <div v-if="isExternal" v-on="$listener" class="svg-external-icon svg-icon" :style="styleExternalIcon"></div>
-    <svg v-else :class="svgClass" aria-hidden="true" v-on="$listener">
+    <div v-if="isExternal" class="svg-external-icon svg-icon" :style="styleExternalIcon"></div>
+    <svg v-else :class="svgClass" aria-hidden="true">
         <use :xlink:href='iconName'/>
     </svg>
 </template>

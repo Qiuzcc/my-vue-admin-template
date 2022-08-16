@@ -23,14 +23,16 @@ export default {
       levelList: null
     }
   },
+
   watch: {
     $route() {
       this.getBreadcrumb();
-    }
+    },
   },
   created() {
     this.getBreadcrumb();
   },
+
   methods: {
     getBreadcrumb() {
       // 面包屑导航只展示路由中带有meta.title信息的路由
