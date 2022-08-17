@@ -75,7 +75,7 @@ module.exports = [
             const { token } = body
             //这里token暂时没有用上，但是返回token这个设计我觉得是合理需要的，可以让后端获取用户的登陆状态
             return {
-                code: 20000,
+                code: 200,
                 data: 'success'
             }
         }
