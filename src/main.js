@@ -9,7 +9,13 @@ import 'normalize.css/normalize.css'
 import '@/styles/index.scss'
 import '@/icons'
 import './permission'
-import '../mock-simple'
+
+// import '../mock-simple'
+// 开发模式下使用了mock-server，在vue.config.js中配置
+if (process.env.NODE_ENV === 'production') {
+  const { mockXHR } = require('../mock')
+  mockXHR()
+}
 
 Vue.config.productionTip = false;
 
