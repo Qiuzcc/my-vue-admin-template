@@ -12,6 +12,7 @@
 - Mock
 - 运行build结果
 - 问题合集
+- 部署到github page
 
 ## 项目配置
 
@@ -488,7 +489,24 @@ dev环境下：baseURL：`/dev-api`
 
 这涉及到/build目录，和package.json的scripts都preview命令
 
+## 十一、部署到github page
 
+部署原理，将dist目录下的所有文件上传到仓库（或者直接上传到github.io），然后就可以直接访问了
+
+1. 在/dist根目录下新建一个git仓库
+2. 提交所以内容，并同步在远程仓库（我在这里选择了github.io）
+3. 稍等一会儿，即可在线预览
+
+```bash
+cd dist 
+git init
+git add -A
+git commit -m 'deploy部署'
+git remote add origin git@github.com:Qiuzcc/Qiuzcc.github.io.git
+git push -u origin master
+```
+
+以上操作方式的缺陷在于，它是一次性部署，如果项目更改了，重新build了项目，只能再次手动提交修改，做不到自动化（或说半自动化部署）
 
 ## 附：问题合集
 
