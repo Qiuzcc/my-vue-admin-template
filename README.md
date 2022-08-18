@@ -1,5 +1,18 @@
 # 从零搭建vue-admin-template项目
 
+目录
+- 项目配置
+- 后台主页
+- 导航权限
+- 全局utils
+- 全局components
+- 全局styles
+- store
+- 路由
+- Mock
+- 运行build结果
+- 问题合集
+
 ## 项目配置
 
 - @vue/cli 4.2.3
