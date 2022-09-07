@@ -19,13 +19,15 @@
 
 本文记录从零搭建vue-admin-template的全过程。
 
+项目链接：[timegogo的Vue实践项目-Dashboard (qiuzcc.github.io)](https://qiuzcc.github.io/#/dashboard)
 
+<br>
 
 探究了一遍vue-admin-template的项目代码，现在从零开始配置环境、搭建项目，复现项目。
 
 探究vue-admin-template的过程记录在另一个仓库中：[Qiuzcc/admin-vue-template: vue-cli2.9.6 + vue2.x版本](https://github.com/Qiuzcc/admin-vue-template)。在探究过程中对项目结构、第三方依赖、项目技术点做了解析，以及记录了常见的问题
 
-
+<br>
 
 对照着项目代码来敲代码，和不看项目代码依靠记忆复现代码，是两种不同的体验，后者更接近于实际开发过程，很多在对着项目敲代码中隐藏的问题（需要思考的问题、别人已经帮你解决好的问题）会在自己复现的过程中暴露出来，而思考解决这些细节问题的过程会加深对于项目的理解，能够大致复现项目也才代表是对项目的掌握。
 
