@@ -25,7 +25,8 @@ module.exports = {
   * In most cases please use '/' !!!
   * Detail: https://cli.vuejs.org/config/#publicpath
   */
-    publicPath: '/',
+    publicPath: '/',            // 如果是'/'，编译后的项目无法直接打开访问，需要借助服务器才能正常运行
+                                // 如果是'./'，编译后可以直接点击index.html文件打开网页
     outputDir: 'dist',
     assetsDir: 'static',
     lintOnSave: false,          //原来的值为：process.env.NODE_ENV === 'development',
