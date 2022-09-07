@@ -1,6 +1,7 @@
 # 从零搭建vue-admin-template项目
 
-目录
+## 目录
+
 - 项目配置
 - 后台主页
 - 导航权限
@@ -13,6 +14,18 @@
 - 运行build结果
 - 问题合集
 - 部署到github page
+
+## 简介
+
+记录从零搭建vue-admin-template的全过程。
+
+探究了一遍vue-admin-template的项目代码，现在从零开始配置环境、搭建项目，复现项目。
+
+探究vue-admin-template的过程中对项目结构、第三方依赖、项目技术点做了解析，以及记录了常见的问题
+
+详见：[Qiuzcc/admin-vue-template: vue-cli2.9.6 + vue2.x版本](https://github.com/Qiuzcc/admin-vue-template)
+
+对照着项目代码来敲代码，和不看项目代码依靠记忆复现代码，是两种不同的体验，后者更接近于实际开发过程，很多在对着项目敲代码中隐藏的问题（需要思考的问题、别人已经帮你解决好的问题）会在自己复现的过程中暴露出来，而思考解决这些细节问题的过程会加深对于项目的理解，能够大致复现项目也才代表是对项目的掌握。
 
 ## 项目配置
 
@@ -537,3 +550,4 @@ git push -u origin master
 10. bug，right menu样式不正确，占用到了AppMain的位置，而且被覆盖了。right menu的el-dropdown的类名拼写错误，原本：`class=avator-container`，错误：a写成了o，正确应该为：'class=avatar-container'。纠正后解决
 
 11. bug，Table中的数据显示不出来。获取返回的数据格式不对，应该是接收数组，但是接收到了object。纠正后解决
+
